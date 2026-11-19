@@ -1,0 +1,142 @@
+
+/* Estilo geral da página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3efe4;
+    color: #20372d;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Centraliza o conteúdo */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.subtitulo {
+    color: #af6233;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #205741;
+    font-size: 36px;
+    margin: 8px 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+header p:last-child {
+    color: #52655b;
+}
+
+/* Caixas do formulário e da tabela */
+.painel {
+    background: #fffdf8;
+    border: 1px solid #dfd7c6;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(32, 55, 45, 0.06);
+}
+
+/* Organização dos campos */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #ffffff;
+    color: #20372d;
+    border: 1px solid #bdb7a8;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #be7643;
+    outline-offset: 1px;
+}
+
+/* Botão de cadastro */
+button {
+    background: #205741;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2d7456;
+}
+
+/* Tabela dos jogos */
+.tabela-rolagem {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e7dfd0;
+}
+
+th {
+    color: #205741;
+    background: #e9eee6;
+}
+
+tbody tr:hover {
+    background: #f4f3ec;
+}
+
+/* Ajusta o conteúdo para celulares */
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .painel {
+        padding: 16px;
+    }
+}

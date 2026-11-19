@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jogos de Tabuleiro</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="subtitulo">Minha coleção</p>
+            <h1>Jogos de Tabuleiro</h1>
+            <p>Cadastre seus jogos favoritos e consulte a lista abaixo.</p>
+        </header>
+
+        <!-- Formulário para cadastrar um jogo -->
+        <section class="painel">
+            <h2>Cadastrar jogo</h2>
+
+            <form id="formJogo">
+                <label for="nome">Nome do jogo</label>
+                <input type="text" id="nome" placeholder="Ex.: Xadrez" required>
+
+                <label for="categoria">Categoria</label>
+                <input type="text" id="categoria" placeholder="Ex.: Estratégia" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <!-- Tabela preenchida pelo JavaScript -->
+        <section class="painel">
+            <h2>Jogos cadastrados</h2>
+
+            <div class="tabela-rolagem">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Posição</th>
+                            <th scope="col">Jogo</th>
+                            <th scope="col">Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
